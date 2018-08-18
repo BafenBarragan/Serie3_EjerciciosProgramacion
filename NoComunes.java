@@ -28,11 +28,13 @@ public class NoComunes
           
         int i = 0; 
         char seguir = 'y'; 
+        
         System.out.print("Agregue el primer número para el conjunto 1: ");
         arreglo1.add (i, teclado.nextDouble());
         
         System.out.print("¿Desea añadir otro número? Y/N ");
          seguir = teclado.next().charAt(0);
+        
         while (seguir == 'y' || seguir == 'Y'){
             i ++;
             System.out.print("Agregue el " + (i + 1) + " número para el conjunto 1: ");
@@ -84,10 +86,5 @@ public class NoComunes
                 
         JOptionPane.showMessageDialog (null, "Conjunto #1: " + arreglo1 + "\n\nConjunto #2: " + arreglo2+ 
         "\n\nConjunto de no comunes: "+ listaFinal);
-        
-       
-            
-        
-    }
-
+     }
 }
